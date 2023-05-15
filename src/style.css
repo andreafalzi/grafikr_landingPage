@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+
+@layer base {
+  html {
+    font-family: Plus Jakarta Sans, system-ui, sans-serif;
+    background-color: #f6f4f4;
+  }
+}
+
+@layer components {
+  .hamburger {
+    @apply flex flex-col gap-2;
+  }
+  .line {
+    @apply w-[40px] h-[3px] 
+    rounded-xl 
+    bg-black
+    transition-all
+    duration-[0.3s]
+    ease-in-out;
+  }
+
+  .hamburger.isactive .line:nth-child(2) {
+    @apply opacity-0;
+  }
+
+  .hamburger.isactive .line:nth-child(1) {
+    @apply translate-y-[11px] rotate-45;
+  }
+
+  .hamburger.isactive .line:nth-child(3) {
+    @apply -translate-y-[11px] -rotate-45;
+  }
+
+  .navbar {
+    @apply hidden;
+  }
+  .navbar.active {
+    @apply block;
+  }
+}
