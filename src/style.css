@@ -41,4 +41,8 @@
   .navbar.active {
     @apply block;
   }
+
+  .draggable {
+    cursor: grabbing;
+  }
 }

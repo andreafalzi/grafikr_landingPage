@@ -41,9 +41,9 @@
         </button>
       </nav>
     </header>
-    <main>
+    <main class="overflow-hidden">
       <section class="pt-44 pb-20 bg-grk-grey">
-        <div class="max-w-[1440px] mx-auto px-4">
+        <div class="max-w-[1440px] mx-auto md:px-4">
           <h4 class="text-center text-sm pb-6">SHOPIFY EXPERTS</h4>
           <h1 class="text-center font-bold text-5xl">Et dedikeret e-commerce-bureau</h1>
           <div class="mt-10">
@@ -52,7 +52,7 @@
         </div>
       </section>
       <section id="kompetancer" class="pt-32">
-        <div class="max-w-[1440px] mx-auto px-4">
+        <div class="max-w-[1440px] mx-auto md:px-4">
           <h2 class="text-center font-bold text-4xl pb-6">Kompetencer</h2>
           <h4 class="text-center text-2xl max-w-4xl mx-auto">
             Ved at kombinere analyse, strategi, kreativitet, design og udvikling, skaber vi positiv
@@ -94,84 +94,121 @@
         <h2 class="text-center text-4xl font-bold">Arbejdskulturen hos Grafikr</h2>
         <div class="mt-[60px] lg:py-16 lg:bg-grk-grey">
           <img
-            class="max-w-[1440px] mx-auto px-4 w-full"
+            class="max-w-[1440px] mx-auto md:px-4 w-full"
             src="assets/image-4.png"
             alt="Devs working"
           />
         </div>
       </section>
       <section class="pt-32">
-        <div class="max-w-[1440px] mx-auto px-4">
+        <div class="max-w-[1440px] mx-auto md:px-4">
           <h2 class="text-center text-4xl font-bold">Arbejd med nogle af de største brands</h2>
-          <div class="relative mt-[60px]">
-            <div id="carousel" class="mt-10 flex flex-nowrap gap-16 overflow-x-hidden">
-              <div class="relative flex-shrink-0">
-                <img src="assets/image-5.png" alt="Man and horse" />
+          <div id="wrapper" class="relative mt-[60px]">
+            <div
+              id="slider"
+              class="mt-10 flex flex-nowrap gap-16 max-h-[560px] overflow-y-hidden w-screen overflow-x-hidden select-none"
+            >
+              <div class="relative flex-shrink-0 w-[430px] slide">
+                <img
+                  class="h-full w-full"
+                  src="assets/image-5.png"
+                  alt="Man and horse"
+                  draggable="false"
+                />
                 <span class="absolute left-4 bottom-5 text-2xl text-white font-medium">Barons</span>
               </div>
-              <div class="relative flex-shrink-0">
-                <img src="assets/image-6.png" alt="Women pink" />
+              <div class="relative flex-shrink-0 w-[430px] slide">
+                <img
+                  class="h-full w-full"
+                  src="assets/image-6.png"
+                  alt="Women pink"
+                  draggable="false"
+                />
                 <span class="absolute left-4 bottom-5 text-2xl text-white font-medium"
                   >Basic Apparel</span
                 >
               </div>
-              <div class="relative flex-shrink-0">
-                <img src="assets/image-7.png" alt="Man picture" />
+              <div class="relative flex-shrink-0 w-[430px] slide">
+                <img
+                  class="h-full w-full"
+                  src="assets/image-7.png"
+                  alt="Man picture"
+                  draggable="false"
+                />
+                <span class="absolute left-4 bottom-5 text-2xl text-white font-medium"
+                  >Shaping New Tomorrow</span
+                >
+              </div>
+              <div class="relative flex-shrink-0 w-[430px] slide">
+                <img
+                  class="h-full w-full"
+                  src="assets/image-5.png"
+                  alt="Man and horse"
+                  draggable="false"
+                />
+                <span class="absolute left-4 bottom-5 text-2xl text-white font-medium">Barons</span>
+              </div>
+              <div class="relative flex-shrink-0 w-[430px] slide">
+                <img class="h-full" src="assets/image-6.png" alt="Women pink" draggable="false" />
+                <span class="absolute left-4 bottom-5 text-2xl text-white font-medium"
+                  >Basic Apparel</span
+                >
+              </div>
+              <div class="relative flex-shrink-0 w-[430px] slide">
+                <img class="h-full" src="assets/image-7.png" alt="Man picture" draggable="false" />
                 <span class="absolute left-4 bottom-5 text-2xl text-white font-medium"
                   >Shaping New Tomorrow</span
                 >
               </div>
             </div>
-            <div class="flex items-center absolute top-1/2 -translate-y-1/2 w-full px-10">
-              <div id="prev" class="relative cursor-pointer">
-                <span
-                  class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-20 lg:h-[100px] w-20 lg:w-[100px] rounded-full border-2 border-white"
-                ></span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 h-12 stroke-white"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 19.5L8.25 12l7.5-7.5"
-                  />
-                </svg>
-              </div>
-              <div id="after" class="ml-auto relative cursor-pointer">
-                <span
-                  class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-20 lg:h-[100px] w-20 lg:w-[100px] rounded-full border-2 border-white"
-                ></span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-12 h-12 stroke-white"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </div>
+
+            <div
+              id="prev"
+              class="absolute top-1/2 -translate-y-1/2 left-0 cursor-pointer arrow ml-4 lg:ml-6"
+            >
+              <span
+                class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[45px] lg:h-[100px] w-[45px] lg:w-[100px] rounded-full border-2 border-white"
+              ></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 lg:w-12 h-8 lg:h-12 stroke-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
             </div>
+            <div
+              id="after"
+              class="absolute top-1/2 -translate-y-1/2 right-0 cursor-pointer arrow mr-4 lg:mr-6"
+            >
+              <span
+                class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[45px] lg:h-[100px] w-[45px] lg:w-[100px] rounded-full border-2 border-white"
+              ></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 lg:w-12 h-8 lg:h-12 stroke-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+
             <div class="flex justify-center mt-5">
-              <ul class="flex gap-3">
-                <li class="h-2 w-2 rounded-full bg-black"></li>
-                <li class="h-2 w-2 rounded-full bg-gray-200"></li>
-                <li class="h-2 w-2 rounded-full bg-gray-200"></li>
-                <li class="h-2 w-2 rounded-full bg-gray-200"></li>
-                <li class="h-2 w-2 rounded-full bg-gray-200"></li>
-                <li class="h-2 w-2 rounded-full bg-gray-200"></li>
-                <li class="h-2 w-2 rounded-full bg-gray-200"></li>
-              </ul>
+              <ul id="dots" class="flex gap-3"></ul>
             </div>
           </div>
         </div>
