@@ -20,9 +20,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.s[ac]ss$/i,
         include: path.resolve(__dirname, 'src'),
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],
   },

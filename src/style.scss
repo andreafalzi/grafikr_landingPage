@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
 
 @layer base {
   html {
@@ -40,9 +42,5 @@
   }
   .navbar.active {
     @apply block;
-  }
-
-  .draggable {
-    cursor: grabbing;
   }
 }
