@@ -1,5 +1,6 @@
-import './style.scss';
-import Glide from '@glidejs/glide';
+import './style.css';
+import '@splidejs/splide/css';
+import Splide from '@splidejs/splide';
 
 let hamburger = document.querySelector('.hamburger');
 let menu = document.querySelector('#nav');
@@ -25,27 +26,25 @@ function scrollFunction() {
 }
 
 // Slider Logic
-const cards = document.querySelectorAll('.glide__slide');
 
-cards.forEach((_, i) => {
-  const dot = `<button class="glide__bullet" data-glide-dir="=${i}"></button>`;
-  return (document.querySelector('.glide__bullets').innerHTML += dot);
-});
-
-new Glide('.glide', {
-  type: 'slider',
-  startAt: 0,
-  perView: 3,
-  keyboard: true,
-  gap: 64,
-  bound: true,
-  focusAt: 0,
+var splide = new Splide('.splide', {
+  perPage: 3,
   breakpoints: {
-    800: {
-      perView: 2,
+    1200: {
+      perPage: 3,
+    },
+    640: {
+      perPage: 2,
     },
     400: {
-      perView: 1,
+      perPage: 1,
     },
   },
-}).mount();
+  gap: '64px',
+  focus: 'center',
+  omitEnd: true,
+  height: '480px',
+  autoWidth: true,
+});
+
+splide.mount();
